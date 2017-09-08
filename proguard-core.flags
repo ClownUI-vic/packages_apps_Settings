@@ -1,0 +1,2 @@
+# ClownSettings
+-keep class com.clown.settings.**

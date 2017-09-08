@@ -24,6 +24,15 @@
         android:order="-140"
         android:key="top_level_account_category"
         android:layout="@layout/settingslib_preference_category_no_title">
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.clown.settings.ClownSettings"
+            android:icon="@drawable/ic_settings_clown"
+            android:key="top_level_clown"
+            android:order="-135"
+            android:title="@string/clown_dashboard_title"
+            android:summary="@string/clown_dashboard_summary"
+            settings:controller="com.clown.settings.TopLevelSettingsPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
