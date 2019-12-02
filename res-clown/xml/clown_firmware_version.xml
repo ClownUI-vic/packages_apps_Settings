@@ -30,7 +30,16 @@
     <!-- Firmware Category -->
     <PreferenceCategory
         android:title="@string/clown_fw_rom_cat">
-    
+
+    <!-- Device name -->
+    <Preference
+        android:key="about_device_name"
+        android:title="@string/about_device_name"
+        android:summary="@string/summary_placeholder"
+        settings:layout="@layout/xd_pref_card_top"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
+
         <!-- ClownUI version -->
     <Preference
         android:key="clownui_version"
@@ -38,7 +47,7 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:searchable="false"
-        settings:layout="@layout/xd_pref_card_top"
+        settings:layout="@layout/xd_pref_card_mid"
         settings:controller="com.clown.settings.deviceinfo.firmwareversion.ClownVersionDetailPreferenceController"/>
 
     <!-- Clown Maintainer  -->
